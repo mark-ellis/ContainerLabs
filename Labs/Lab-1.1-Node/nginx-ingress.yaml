@@ -1,0 +1,11 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: openmct-ingress
+spec:
+  defaultBackend:
+    service:
+      name: openmct
+      port:
+        number: 8080
+
